@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FuelSync | Training Data Into Fueling Decisions</title>
+    <meta
+      name="description"
+      content="FuelSync turns endurance training data into workout-specific fueling guidance, replenishment planning, and race-week nutrition structure."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="topbar">
+        <a class="brand" href="#top">
+          <span class="brand-mark">F</span>
+          <span class="brand-copy">
+            <strong>FuelSync</strong>
+            <span>Endurance fueling ops</span>
+          </span>
+        </a>
+        <nav class="topnav" aria-label="Primary">
+          <a href="#how-it-works">How it works</a>
+          <a href="#weekly-plan">Weekly plan</a>
+          <a href="#catalog">F2C mapping</a>
+          <a href="#roadmap">Roadmap</a>
+        </nav>
+      </header>
+
+      <main id="top">
+        <section class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow">Training-connected fueling</p>
+            <h1>Training data in. Fueling decisions out.</h1>
+            <p class="hero-text">
+              FuelSync translates endurance workouts into practical pre, during, and post fueling
+              guidance, then turns the next seven days of training into a replenishment plan.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#weekly-plan">See the weekly flow</a>
+              <a class="button button-secondary" href="./screen-inventory.md">View screen inventory</a>
+            </div>
+            <dl class="hero-metrics">
+              <div>
+                <dt>7-day plan</dt>
+                <dd>Workout-class guidance cards</dd>
+              </div>
+              <div>
+                <dt>F2C-first MVP</dt>
+                <dd>Brand-mapped replenishment logic</dd>
+              </div>
+              <div>
+                <dt>Deterministic engine</dt>
+                <dd>Explicit rules, not AI-generated advice</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="hero-panel">
+            <div class="panel-header">
+              <span class="panel-pill">Today</span>
+              <span class="panel-subtle">Tempo run · 75 min</span>
+            </div>
+            <div class="stack-card">
+              <h2>Fueling brief</h2>
+              <div class="stack-row">
+                <span>Pre</span>
+                <p>40 to 60g carbs before session.</p>
+              </div>
+              <div class="stack-row">
+                <span>During</span>
+                <p>Electrolytes. Optional 20 to 30g carbs depending on duration.</p>
+              </div>
+              <div class="stack-row">
+                <span>Post</span>
+                <p>60 to 80g carbs plus 20 to 25g protein.</p>
+              </div>
+            </div>
+            <div class="stack-card muted-card">
+              <h3>Restock signal</h3>
+              <ul>
+                <li>Ultra-Durance × 6</li>
+                <li>Hydra-Durance × 5</li>
+                <li>Rehab 3:1 Complete Vegan × 3</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="how-it-works">
+          <div class="section-heading">
+            <p class="eyebrow">How it works</p>
+            <h2>FuelSync is an operating layer between training and nutrition.</h2>
+          </div>
+          <div class="grid three-up">
+            <article class="info-card">
+              <p class="info-index">01</p>
+              <h3>Connect workouts</h3>
+              <p>
+                Pull recent and upcoming sessions from training sources like Strava, or enter key
+                events manually when planning data is incomplete.
+              </p>
+            </article>
+            <article class="info-card">
+              <p class="info-index">02</p>
+              <h3>Classify demand</h3>
+              <p>
+                Use explicit logic for duration and intensity to bucket each session into fueling
+                classes such as tempo, intervals, or long endurance.
+              </p>
+            </article>
+            <article class="info-card">
+              <p class="info-index">03</p>
+              <h3>Operationalize fueling</h3>
+              <p>
+                Surface guidance, aggregate category demand, and map the forecast to a brand
+                catalog so the athlete knows what to buy before the week starts.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section alternate" id="weekly-plan">
+          <div class="section-heading">
+            <p class="eyebrow">Weekly plan</p>
+            <h2>A seven-day view built for real preparation.</h2>
+          </div>
+          <div class="plan-grid">
+            <article class="plan-card">
+              <header>
+                <p>Thursday</p>
+                <span>Tempo</span>
+              </header>
+              <strong>Run · 75 min</strong>
+              <p>Pre: 40 to 60g carbs</p>
+              <p>During: Electrolytes + optional carbs</p>
+              <p>Post: 60 to 80g carbs + 25g protein</p>
+            </article>
+            <article class="plan-card">
+              <header>
+                <p>Friday</p>
+                <span>Easy medium</span>
+              </header>
+              <strong>Ride · 60 min</strong>
+              <p>Pre: Optional light carb top-up</p>
+              <p>During: Water + electrolytes</p>
+              <p>Post: Balanced meal + protein</p>
+            </article>
+            <article class="plan-card featured">
+              <header>
+                <p>Saturday</p>
+                <span>Long endurance</span>
+              </header>
+              <strong>Ride · 2h 45m</strong>
+              <p>Pre: 80 to 120g carbs</p>
+              <p>During: 45 to 90g carbs/hr + sodium</p>
+              <p>Post: 1.0 to 1.2 g/kg carbs + 25 to 30g protein</p>
+            </article>
+            <article class="plan-card">
+              <header>
+                <p>Sunday</p>
+                <span>Recovery</span>
+              </header>
+              <strong>Run · 35 min</strong>
+              <p>Pre: Normal meals</p>
+              <p>During: Hydrate normally</p>
+              <p>Post: Protein and total energy intake</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="catalog">
+          <div class="section-heading">
+            <p class="eyebrow">F2C-first MVP</p>
+            <h2>Start with one nutrition ecosystem and keep the logic legible.</h2>
+          </div>
+          <div class="catalog-layout">
+            <article class="catalog-card">
+              <h3>High-value decision areas</h3>
+              <ul class="feature-list">
+                <li>Hydration and electrolyte support</li>
+                <li>Carbohydrate fueling before and during key sessions</li>
+                <li>Post-workout recovery recommendations</li>
+                <li>Seven-day replenishment forecasting mapped to F2C</li>
+              </ul>
+            </article>
+            <article class="catalog-card">
+              <h3>Seed products</h3>
+              <div class="token-grid">
+                <span>Hydra-Durance</span>
+                <span>Electro-Durance</span>
+                <span>Glyco-Durance</span>
+                <span>Ultra-Durance</span>
+                <span>Rehab 3:1 Complete Vegan</span>
+                <span>Organic Vegan-Pure</span>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section roadmap" id="roadmap">
+          <div class="section-heading">
+            <p class="eyebrow">Roadmap</p>
+            <h2>What comes after the GitHub Pages launch site.</h2>
+          </div>
+          <div class="timeline">
+            <article>
+              <span>Sprint 1</span>
+              <h3>Core shell</h3>
+              <p>Account flow, athlete profile, visual system, and MVP information architecture.</p>
+            </article>
+            <article>
+              <span>Sprint 2</span>
+              <h3>Training ingestion</h3>
+              <p>Real Strava OAuth, sync, normalization, and workout persistence.</p>
+            </article>
+            <article>
+              <span>Sprint 3</span>
+              <h3>Guidance engine</h3>
+              <p>Workout classification, weekly recommendations, and event-aware adjustments.</p>
+            </article>
+            <article>
+              <span>Sprint 4</span>
+              <h3>Cart workflow</h3>
+              <p>Brand catalog, cart generation, export, and outbound commerce handoff.</p>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p>FuelSync MVP static site for GitHub Pages.</p>
+        <a href="https://github.com/jvanulden/fuel-sync">View repository</a>
+      </footer>
+    </div>
+  </body>
+</html>

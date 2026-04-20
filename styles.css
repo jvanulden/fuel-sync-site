@@ -430,6 +430,11 @@ a {
   color: var(--muted);
 }
 
+.footer a {
+  color: var(--green);
+  font-weight: 600;
+}
+
 @media (max-width: 980px) {
   .hero,
   .catalog-layout,
